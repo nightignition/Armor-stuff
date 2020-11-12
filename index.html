@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Demo</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Demo project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="armor_calc_container d-flex flex-column align-items-center justify-content-center">
+					<div>
+						<form action="#" class="armor_form">
+							<div>
+								<select name="attacker_level" id="attacker_level"></select>
+								<label for="attacker_level">Attacker Level</label>
+							</div>
+							<div>
+								<input type="text" id="armor_input">
+								<label for="armor_input">Your Armor</label>
+							</div>
+							<div>
+								<input type="text" id="health_input">
+								<label for="health_input">Your Health</label>
+							</div>
+						</form>
+						<div class="armor_output"></div>
+						<div class="eh_output"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="styles/bootstrap-4.1.2/popper.js"></script>
+<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
