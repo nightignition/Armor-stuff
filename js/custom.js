@@ -30,8 +30,8 @@ $(document).ready(function()
 
 	function initDropDown()
 	{
-		dropdown.append('<option value="63" selected>63</option>');
-		for(var x = 62; x > 0; x--)
+		dropdown.append('<option value="83" selected>83</option>');
+		for(var x = 82; x > 0; x--)
 		{
 			var opt = '<option value="' + x + '">' + x + '</option>';
 			dropdown.append(opt);
@@ -64,7 +64,7 @@ $(document).ready(function()
 		var health = parseInt(health_val_input.val());
 		if(armor_val_input.val())
 		{
-			reduction = (armor / (armor + 400 + (85 * attacker_level))) * 100;
+			reduction = (armor / (armor + 400 + (85 * (attacker_level + (4.5 * (attacker_level - 59)))) + (20 * (attacker_level - 80)))) * 100;
 			var output_text = "Your damage reduction is " + reduction.toFixed(2) + "%";
 			armor_val_output.text(output_text);
 		}
